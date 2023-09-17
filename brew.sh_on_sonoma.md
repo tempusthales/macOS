@@ -1,9 +1,9 @@
 # Install Brew.sh for macOS Sonoma 14.0 RC
 
-## Download Command Line Tools for Xcode Beta from:
+### 1. Download Command Line Tools for Xcode Beta from:
 [https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_15_Release_Candidate/Command_Line_Tools_for_Xcode_15_Release_Candidate.dmg](https://download.developer.apple.com/Developer_Tools/Command_Line_Tools_for_Xcode_15_Release_Candidate/Command_Line_Tools_for_Xcode_15_Release_Candidate.dmg)
 
-## Install Brew.sh on macOS Sonoma
+### 2. Install Brew.sh on macOS Sonoma
 
 There are two ways to install Brew; via Command Line or via macOS Pkg:
 
@@ -17,7 +17,7 @@ OR
 
 After the installation of Brew is complete, you will receive a "Installation Successful" message, indicating that the Brew installation process has finished. To check the version of Brew, you can try using the command "brew -v" in Terminal. If you encounter an error such as "zsh: command not found: brew," the next step will help you resolve this issue.
 
-## Modify the Brew PATH
+### 3. Modify the Brew PATH
 
 In certain versions, Brew is installed in the directory `/usr/local/bin` for Intel-based Macs, while on M1/M2 Macs, Brew is installed in the directory `/opt/homebrew/bin`. This difference can lead to an error message stating "zsh: command not found: brew" when using the Brew command. To resolve this issue, we need to adjust the PATH of the Brew installation directory to the appropriate value. You can utilize the following commands in Terminal to modify the Brew PATH:
 
@@ -28,7 +28,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-## TL;DR
+### 4. TL;DR
 
 By executing these commands, the PATH configuration will be updated, ensuring that Brew is accessible from the correct location.
 
